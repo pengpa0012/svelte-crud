@@ -15,9 +15,8 @@
     <div>
       <Route path="/profile/:id" component={Profile} />
       <Route path="/login" component={Login} />
-      <Route path="/"> <h1 class="text-5xl text-center my-20">Home</h1></Route>
+      <Route path="/"><h1 class="text-5xl text-center my-20">Home</h1></Route>
     </div>
   </Router>
- 
 </main>
 
