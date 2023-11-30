@@ -1,4 +1,5 @@
 <script lang="ts">
+  let isLogin = false
   let values = {
     username: "",
     password: ""

@@ -1,3 +1,3 @@
 <div class="p-5">
-  <h1>Profile</h1>
+  <h1>Home</h1>
 </div>
