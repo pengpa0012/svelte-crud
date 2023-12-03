@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex justify-between items-center">
-  <h1>Home</h1>
+  <Link to="/">Home</Link>
   <ul class="flex gap-5">
     <li>
       <Link to="/profile/12">Profile</Link>
