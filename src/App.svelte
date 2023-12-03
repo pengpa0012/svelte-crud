@@ -9,7 +9,7 @@
 
 <main>
   <Router {url}>
-    <div>
+    <div class="max-w-[1200px] mx-auto">
       <Route path="/profile/:id" component={Profile} />
       <Route path="/login" component={Login} />
       <Route path="/" component={Home} />
