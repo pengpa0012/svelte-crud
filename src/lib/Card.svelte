@@ -1,5 +1,5 @@
 <script>
-  import {Link} from "svelte-routing"
+  import { Link } from "svelte-routing"
   export let user = {
     _id: "",
     username: "",

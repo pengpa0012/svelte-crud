@@ -1,6 +1,7 @@
 <script lang="ts">
   import axios from 'axios'
   import { isLoggedIn } from "../store"
+  // @ts-ignore
   import { navigate } from "svelte-routing"
   let isLogin = true
   let values = {

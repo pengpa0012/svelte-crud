@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from "svelte";
+  // @ts-ignore
 	import { navigate } from "svelte-routing";
   import {isLoggedIn} from "../store"
 
