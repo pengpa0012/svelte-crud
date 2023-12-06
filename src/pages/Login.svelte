@@ -9,8 +9,9 @@
     password: ""
   }
   async function onSubmit() {
+    const {username, repeat_password, password} = values
     if(!values.repeat_password) {
-      const {username, password} = values
+      // login
       axios.post(`${import.meta.env.VITE_ENDPOINT}/login`, {
         username,
         password
@@ -24,7 +25,14 @@
       })
     } else {
       // register
-      console.log("register")
+      if(repeat_password !== password) return
+      axios.post(`${import.meta.env.VITE_ENDPOINT}/signup`, {
+        username,
+        password
+      })
+      .then(response => {
+        isLogin = true
+      })
     }
   }
 

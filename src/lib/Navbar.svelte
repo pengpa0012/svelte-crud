@@ -1,5 +1,11 @@
 <script>
-  import { Link } from "svelte-routing";
+  import { Link, navigate } from "svelte-routing";
+  function onLogout() {
+    localStorage.removeItem("token")
+    localStorage.removeItem("username")
+    localStorage.removeItem("userId")
+    navigate("/login")
+  }
 </script>
 
 <div class="flex justify-between items-center">
@@ -9,7 +15,7 @@
       <Link to="/profile/12">Profile</Link>
     </li>
     <li>
-      <Link to="/login">Logout</Link>
+      <button on:click={onLogout}>Logout</button>
     </li>
   </ul>
 </div>
