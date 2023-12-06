@@ -10,7 +10,7 @@
   }
   async function onSubmit() {
     const {username, repeat_password, password} = values
-    if(!values.repeat_password) {
+    if(isLogin) {
       // login
       axios.post(`${import.meta.env.VITE_ENDPOINT}/login`, {
         username,
