@@ -1,9 +1,11 @@
 <script>
+	import Auth from "../lib/Auth.svelte";
 	import Card from "../lib/Card.svelte";
 
   let isCreate = true
 </script>
 
+<Auth />
 <div class="p-5">
   <div class="mb-4 flex flex-col items-center gap-4">
     <img src="https://via.placeholder.com/200x200" alt="profile_image" class="rounded-full">

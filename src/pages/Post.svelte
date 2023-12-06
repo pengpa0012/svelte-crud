@@ -1,3 +1,10 @@
+<script>
+
+	import Auth from "../lib/Auth.svelte";
+
+</script>
+
+<Auth />
 <div class="p-5">
   <img src="https://via.placeholder.com/1200x500" alt="banner">
   <div class="flex justify-between items-center my-4">
